@@ -1,4 +1,4 @@
-import { pupolar_Categories } from "../constant/Product";
+import { pupolar_Categories } from "../../constant/Product";
 
 function PopularCategori() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import ProductBox from "./ProductBox";
-import { discount_products } from "../constant/Product";
+import { discount_products } from "../../constant/Product";
 
 function DiscountProducts() {
   return (

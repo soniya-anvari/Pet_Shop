@@ -40,6 +40,7 @@ module.exports = {
       purple_text_color: "#982477",
       pink_text_color: "#ff3581",
       bg_gray_box: "#f2f3fb",
+      bg_gray_pages: "#f3f3f3",
     },
   },
 

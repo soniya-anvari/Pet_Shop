@@ -1,4 +1,4 @@
-import { api } from "../api/api";
+import { api } from "../../api/api";
 
 import { useEffect, useState } from "react";
 import SliderOff from "./SliderOff";

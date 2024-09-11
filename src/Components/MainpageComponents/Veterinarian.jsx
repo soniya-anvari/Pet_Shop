@@ -1,5 +1,3 @@
-import React from "react";
-
 function Veterinarian() {
   return (
     <div className='flex flex-col md:flex md:flex-row mt-12   md:h-[460px] w-10/12 m-auto  gap-5'>

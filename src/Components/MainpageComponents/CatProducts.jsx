@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Slider from "./Slider";
-import { api } from "../api/api";
+import { api } from "../../api/api";
 
 function CatProducts() {
   const [catProducts, setCatPeroducts] = useState([]);

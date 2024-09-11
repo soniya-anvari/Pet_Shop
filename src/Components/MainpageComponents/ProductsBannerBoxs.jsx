@@ -1,8 +1,8 @@
 import React from "react";
-import { products } from "../constant/Product";
+import { products } from "../../constant/Product";
 import ProductBox from "./ProductBox";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../assets/styles/style.css";
+import "../../assets/styles/style.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";

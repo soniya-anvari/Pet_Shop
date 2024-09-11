@@ -1,6 +1,6 @@
-import heartIcon from "../assets/images/heartCat.png.webp";
-import petshop from "../assets/images/petShop.png.webp";
-import foodIcon from "../assets/images/foodIcon_84,h_84,r_k.png.webp";
+import heartIcon from "../../assets/images/heartCat.png.webp";
+import petshop from "../../assets/images/petShop.png.webp";
+import foodIcon from "../../assets/images/foodIcon_84,h_84,r_k.png.webp";
 
 function ContactBox() {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "./Slider";
-import { api } from "../api/api";
+import { api } from "../../api/api";
 
 function Recommended() {
   const [recommendedProducts, setRecommendedProducts] = useState([]);

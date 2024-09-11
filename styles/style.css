@@ -1,0 +1,17 @@
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-[#999999] font-Iran_Bold;
+}
+.swiper-button-next {
+  left: -1.4px !important;
+  color: #f5cfa6 !important;
+  top: 6rem !important;
+}
+.swiper-button-prev {
+  right: -2px !important;
+  color: #f5cfa6 !important;
+  top: 6rem !important;
+}
+.swiper-wrapper {
+  padding: 20px !important;
+}

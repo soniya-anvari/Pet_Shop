@@ -1,10 +1,10 @@
 import React from "react";
-import brand1 from "../assets/images/brand1.png.webp";
-import brand2 from "../assets/images/brand2.png.webp";
-import brand3 from "../assets/images/brand3.png.webp";
-import brand4 from "../assets/images/brand4.jpeg.webp";
-import brand5 from "../assets/images/brand5.png.webp";
-import brand6 from "../assets/images/brand6.png.webp";
+import brand1 from "../../assets/images/brand1.png.webp";
+import brand2 from "../../assets/images/brand2.png.webp";
+import brand3 from "../../assets/images/brand3.png.webp";
+import brand4 from "../../assets/images/brand4.jpeg.webp";
+import brand5 from "../../assets/images/brand5.png.webp";
+import brand6 from "../../assets/images/brand6.png.webp";
 
 function Brands() {
   return (
