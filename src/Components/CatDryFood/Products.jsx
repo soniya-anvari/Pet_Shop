@@ -31,11 +31,16 @@ function Products({ brands, products }) {
     console.log({ brand, price });
     let filterD = products;
 
-    let filterProduct = filterD.filter(
-      (product) =>
-        product.default_variant.price.rrp_price / 10 >= 0 &&
-        product.default_variant.price.rrp_price / 10 <= price
-    );
+    let filterProduct = filterD.filter((product) => {
+      if (Object.keys(product.default_variant).length > 0) {
+        console.log("hi");
+        return (
+          product.default_variant.price.rrp_price / 10 >= 0 &&
+          product.default_variant.price.rrp_price / 10 <= price
+        );
+      } else return product;
+    });
+
     if (brand != "all") {
       filterProduct = filterProduct.filter((product) => {
         return product.data_layer.brand == brand;

@@ -9,7 +9,11 @@ function PetProductBox({ product }) {
         <p className='text-[0.85rem] font-Iran_Bold mt-3'>{product.title_fa}</p>
 
         <p className='mt-2 text-[1rem]'>
-          {formatNumber(product.default_variant.price.rrp_price / 10)} تومان
+          {product.default_variant.price != undefined ||
+          product.default_variant.length > 0
+            ? formatNumber(product.default_variant.price.rrp_price / 10)
+            : formatNumber(230000)}
+          تومان
         </p>
         <button className='w-10/12 m-auto mt-5 text-[16px] rounded-3xl bg-bg_btn py-1 px-4 border border-text_orange text-text_orange'>
           افزودن

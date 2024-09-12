@@ -3,7 +3,7 @@ import cat_image from "../assets/images/cat_dry_image.jpg.webp";
 import Products from "../Components/CatDryFood/Products";
 import { useQuery } from "@tanstack/react-query";
 
-import { getCatDryBrands, getCatDryFoods } from "../getData/GetData";
+import { getCatDryBrands, getCatDryFoods } from "../getData/GetDataCat";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 function CatDryFood() {
