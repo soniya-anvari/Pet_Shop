@@ -12,7 +12,11 @@ import { Routes, Route } from "react-router-dom";
 import DogRewardFoods from "./Pages/dog/DogFoods/DogRewardFoods";
 import DogCollar from "./Pages/dog/DogCare/DogCollar";
 import UnderlayPad from "./Pages/DogHealth/UnderlayPad";
-
+import BirdsFood from "./Pages/Birds/BirdsFood";
+import BirdsCare from "./Pages/Birds/BirdsCare";
+import RodentFood from "./Pages/Rodent/RodentFood";
+import AquaticFood from "./Pages/Aquatic/AquaticFood";
+import AquaticCare from "./Pages/Aquatic/AquaticCare";
 function App() {
   return (
     <>
@@ -27,11 +31,21 @@ function App() {
         />
         <Route path='/shop/cat-bil-soil' element={<CatBinSoil />} />
         <Route path='/shop/cat-shampoo' element={<CatShampoo />} />
+        /////////////
         <Route path='/shop/dog-dry-foods' element={<DogDryFoods />} />
         <Route path='/shop/dog-wet-foods' element={<DogWetFoods />} />
         <Route path='/shop/dog-Reward-foods' element={<DogRewardFoods />} />
         <Route path='/shop/dog-Collar' element={<DogCollar />} />
         <Route path='/shop/dog-Underlay-pad' element={<UnderlayPad />} />
+        /////////////
+        <Route path='/shop/bird-food' element={<BirdsFood />} />
+        <Route path='/shop/bird-care' element={<BirdsCare />} />
+        ////////////
+        <Route path='/shop/rodent-food' element={<RodentFood />} />
+        <Route path='/shop/rodent-care' element={<RodentFood />} />
+        /////////////
+        <Route path='/shop/aquatic-food' element={<AquaticFood />} />
+        <Route path='/shop/aquatic-care' element={<AquaticCare />} />
       </Routes>
     </>
   );

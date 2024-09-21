@@ -27,7 +27,19 @@ function Products({ brands, products }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    setSearchParams({ brand, "price[min]": 0, "price[max]": price });
+    console.log(searchParams);
+    if (brand != "all") setSearchParams({ brand });
+    if (price < 17000000)
+      setSearchParams({
+        "price[min]": 0,
+        "price[max]": price,
+      });
+    if (brand !== "all" && price < 17000000)
+      setSearchParams({
+        brand,
+        "price[min]": 0,
+        "price[max]": price,
+      });
     console.log({ brand, price });
     let filterD = products;
 
