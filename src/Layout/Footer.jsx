@@ -3,7 +3,7 @@ import logoEnamad from "../assets/images/logoEnamd.png";
 
 function Footer() {
   return (
-    <div className='w-10/12 flex justify-around m-auto pt-5'>
+    <div className='w-10/12  flex justify-around m-auto pt-5'>
       <div className='w-8/12 flex  flex-col md:flex-row  '>
         <div className='w-full  md:w-8/12 '>
           <img src={logo} className='w-7/12 ' />

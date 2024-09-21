@@ -69,7 +69,7 @@ function Products({ brands, products }) {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className=' mt-10 w-full m-auto  flex flex-col md:flex-row gap-5'>
+    <div className=' mt-10 pb-10 w-full m-auto  flex flex-col md:flex-row gap-5'>
       <div className='w-full md:w-3/12 pt-2 md:pt-9'>
         <h3 className='text-[gray]'>قیمت</h3>
         <input

@@ -1,6 +1,5 @@
 import React from "react";
 import TopeBanner from "../Components/MainpageComponents/TopeBanner";
-import Navbar from "../Components/Navbar";
 import Banner from "../Components/MainpageComponents/Banner";
 import ProductsBannerBoxs from "../Components/MainpageComponents/ProductsBannerBoxs";
 import PetOff from "../Components/MainpageComponents/PetOff";
@@ -12,12 +11,9 @@ import Veterinarian from "../Components/MainpageComponents/Veterinarian";
 import Brands from "../Components/MainpageComponents/Brands";
 import Recommended from "../Components/MainpageComponents/Recommended";
 import ContactBox from "../Components/MainpageComponents/ContactBox";
-import Footer from "../Layout/Footer";
 function Mainpage() {
   return (
     <div>
-      <TopeBanner />
-      <Navbar />
       <Banner />
       <ProductsBannerBoxs />
       <PetOff />
@@ -29,7 +25,6 @@ function Mainpage() {
       <Brands />
       <Recommended />
       <ContactBox />
-      <Footer />
     </div>
   );
 }

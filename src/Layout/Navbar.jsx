@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
-import NavLinks from "./NavLinks";
+import NavLinks from "../Components/NavLinks";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
