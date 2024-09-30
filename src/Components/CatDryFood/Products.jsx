@@ -45,7 +45,6 @@ function Products({ brands, products }) {
 
     let filterProduct = filterD.filter((product) => {
       if (Object.keys(product.default_variant).length > 0) {
-        console.log("hi");
         return (
           product.default_variant.price.rrp_price / 10 >= 0 &&
           product.default_variant.price.rrp_price / 10 <= price

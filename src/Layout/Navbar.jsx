@@ -1,16 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import NavLinks from "../Components/NavLinks";
+import { useDispatch, useSelector } from "react-redux";
+import { SET_IS_OPEN } from "../features/cartSlice";
+
 const Navbar = () => {
+  const products = useSelector((state) => state.products);
+
   const [open, setOpen] = useState(false);
+  const dispatch = useDispatch();
+
+  const location = useLocation();
+
   useEffect(() => {
+    console.log(open);
     if (open) {
       document.body.style.overflow = "hiddn";
     } else {
       document.body.style.overflow = "auto";
     }
   }, [open]);
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
     <nav className='bg-white'>
@@ -88,13 +101,17 @@ duration-500 ${open ? "right-0" : "right-[-100%]"}
               </button>
             </div>
           </div>
-          <div className='w-full md:w-4/12 flex items-center  gap-3 md:mt-5 '>
+          <div className='w-full md:w-4/12 relative flex items-center  gap-3 md:mt-5 '>
+            <p className='px-1 text-white text-[11px]  absolute top-[20px]  rounded-[50%] bg-bg_orange'>
+              {products.count}
+            </p>
             <svg
+              onClick={() => dispatch(SET_IS_OPEN(true))}
               xmlns='http://www.w3.org/2000/svg'
               width='30'
               height='30'
               fill='currentColor'
-              class='bi bi-basket3'
+              className='bi bi-basket3 cursor-pointer'
               viewBox='0 0 16 16'>
               <path d='M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6z' />
             </svg>

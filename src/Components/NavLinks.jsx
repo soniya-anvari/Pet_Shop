@@ -1,10 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { links } from "../constant/MyLinks";
 import "ionicons/icons";
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+  const location = useLocation();
+  useEffect(() => {
+    setSubHeading("");
+    setHeading("");
+  }, [location.pathname]);
+
   return (
     <>
       {links.map((link, index) => (

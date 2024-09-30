@@ -20,6 +20,7 @@ module.exports = {
       clamp_super_des: "clamp(0.9rem, 1vw, 2rem)",
     },
     colors: {
+      text_gray_color: "#5e5e5e",
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
